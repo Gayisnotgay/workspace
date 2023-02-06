@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "MSYS2_MINGW64_GCC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/code",
+                "${workspaceFolder}/include",
+                "D://JTang_Documents//01_c++//raspberry//libgpiod//include",
+                "D://JTang_Documents//01_c++//raspberry//libgpiod//bindings//cxx",
+                "${workspaceFolder}/UtilsLibrary",
+                "D://JTang_Documents//01_c++//raspberry//WiringPi-master//wiringPi"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/OpenSource_/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

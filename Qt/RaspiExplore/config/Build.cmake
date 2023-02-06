@@ -1,0 +1,1 @@
+../../../.vscode_default_template/config/Build.cmake

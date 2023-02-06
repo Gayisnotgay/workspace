@@ -1,0 +1,4586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RaspiExploreGui</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>9</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>9</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="raspiLogoLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>180</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>180</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>Raspberry Pi 400</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_14">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Raspberry Pi Basic</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="raspiBasicInfoBrowser">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Function</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="funBox">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="gpioDrvTitle">
+           <property name="text">
+            <string>GpioDrv</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="gpioDrvBox">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QCommandLinkButton" name="configApplyBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Apply</string>
+         </property>
+         <property name="description">
+          <string>Confirm and show the function's main ui</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="funcWidgets">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>4</number>
+     </property>
+     <widget class="GpioGetFunctionWidget" name="pageGpioGetFunction">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioButton">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_21">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="radioButton_2">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO2(SDA)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="radioButton_36">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="radioButton_3">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO3(SCL)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QRadioButton" name="radioButton_34">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QRadioButton" name="radioButton_4">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO4(GPCLK0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QRadioButton" name="radioButton_28">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO14(TXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QRadioButton" name="radioButton_5">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QRadioButton" name="radioButton_23">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO15(RXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QRadioButton" name="radioButton_6">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO17</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QRadioButton" name="radioButton_32">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO18(PCM_CLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QRadioButton" name="radioButton_7">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO27</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QRadioButton" name="radioButton_24">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QRadioButton" name="radioButton_8">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO22</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QRadioButton" name="radioButton_38">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO23</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QRadioButton" name="radioButton_9">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QRadioButton" name="radioButton_27">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO24</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QRadioButton" name="radioButton_10">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO10(MOSI)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QRadioButton" name="radioButton_25">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QRadioButton" name="radioButton_19">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO9(MISO)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QRadioButton" name="radioButton_33">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO25</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QRadioButton" name="radioButton_18">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(SCLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QRadioButton" name="radioButton_22">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO8(CE0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QRadioButton" name="radioButton_17">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QRadioButton" name="radioButton_31">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO7(CE1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QRadioButton" name="radioButton_15">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO0(ID_SD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QRadioButton" name="radioButton_29">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO1(ID_SC)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QRadioButton" name="radioButton_12">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO5</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QRadioButton" name="radioButton_26">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QRadioButton" name="radioButton_16">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO6</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QRadioButton" name="radioButton_37">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO12(PMW0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QRadioButton" name="radioButton_13">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(PMW1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QRadioButton" name="radioButton_39">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QRadioButton" name="radioButton_20">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO19(PCM_FS)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QRadioButton" name="radioButton_35">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO16</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QRadioButton" name="radioButton_14">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO26</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QRadioButton" name="radioButton_40">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO20(PCM_DIN)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="0">
+          <widget class="QRadioButton" name="radioButton_11">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="1">
+          <widget class="QRadioButton" name="radioButton_30">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO21(PCM_DOUT)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioGetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMaximumSize</enum>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioGetFunctionRun">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Run</string>
+           </property>
+           <property name="description">
+            <string>Confirm the selected pins and Show the status of the pins selected</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="GpioMonitorFunctionWidget" name="pageGpioMonitorFunction">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="formLayout_2">
+         <property name="verticalSpacing">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioButton_41">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_42">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="radioButton_43">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO2(SDA)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="radioButton_44">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="radioButton_45">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO3(SCL)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QRadioButton" name="radioButton_46">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QRadioButton" name="radioButton_47">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO4(GPCLK0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QRadioButton" name="radioButton_48">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO14(TXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QRadioButton" name="radioButton_49">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QRadioButton" name="radioButton_50">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO15(RXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QRadioButton" name="radioButton_51">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO17</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QRadioButton" name="radioButton_52">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO18(PCM_CLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QRadioButton" name="radioButton_53">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO27</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QRadioButton" name="radioButton_55">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO22</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QRadioButton" name="radioButton_57">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QRadioButton" name="radioButton_58">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO24</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QRadioButton" name="radioButton_59">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO10(MOSI)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QRadioButton" name="radioButton_60">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QRadioButton" name="radioButton_61">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO9(MISO)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QRadioButton" name="radioButton_62">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO25</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QRadioButton" name="radioButton_63">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(SCLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QRadioButton" name="radioButton_64">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO8(CE0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QRadioButton" name="radioButton_65">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QRadioButton" name="radioButton_66">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO7(CE1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QRadioButton" name="radioButton_67">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO0(ID_SD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QRadioButton" name="radioButton_68">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO1(ID_SC)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QRadioButton" name="radioButton_69">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO5</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QRadioButton" name="radioButton_70">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QRadioButton" name="radioButton_71">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO6</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QRadioButton" name="radioButton_72">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO12(PMW0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QRadioButton" name="radioButton_73">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(PMW1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QRadioButton" name="radioButton_74">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QRadioButton" name="radioButton_75">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO19(PCM_FS)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QRadioButton" name="radioButton_76">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO16</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QRadioButton" name="radioButton_77">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO26</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QRadioButton" name="radioButton_78">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO20(PCM_DIN)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="0">
+          <widget class="QRadioButton" name="radioButton_79">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="1">
+          <widget class="QRadioButton" name="radioButton_80">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO21(PCM_DOUT)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QRadioButton" name="radioButton_54">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QRadioButton" name="radioButton_56">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO23</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioMonitorFunction</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMaximumSize</enum>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioMonitorFunctionRun">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Run</string>
+           </property>
+           <property name="description">
+            <string>Confirm the selected pins and Start to monitor the status of the pins selected untill you stop manually</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioMonitorFunctionStop">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+           <property name="description">
+            <string>Stop the monitor process</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="GpioPeriodSetFunctionWidget" name="pageGpioPeriodSetFunction">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="formLayout_4">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioButton_121">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_122">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="radioButton_123">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO2(SDA)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="radioButton_124">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="radioButton_125">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO3(SCL)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QRadioButton" name="radioButton_126">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QRadioButton" name="radioButton_127">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO4(GPCLK0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QRadioButton" name="radioButton_128">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO14(TXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QRadioButton" name="radioButton_129">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QRadioButton" name="radioButton_130">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO15(RXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QRadioButton" name="radioButton_131">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO17</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QRadioButton" name="radioButton_132">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO18(PCM_CLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QRadioButton" name="radioButton_133">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO27</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QRadioButton" name="radioButton_134">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QRadioButton" name="radioButton_135">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO22</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QRadioButton" name="radioButton_136">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO23</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QRadioButton" name="radioButton_137">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QRadioButton" name="radioButton_138">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO24</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QRadioButton" name="radioButton_139">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO10(MOSI)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QRadioButton" name="radioButton_140">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QRadioButton" name="radioButton_141">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO9(MISO)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QRadioButton" name="radioButton_142">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO25</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QRadioButton" name="radioButton_143">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(SCLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QRadioButton" name="radioButton_144">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO8(CE0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QRadioButton" name="radioButton_145">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QRadioButton" name="radioButton_146">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO7(CE1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QRadioButton" name="radioButton_147">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO0(ID_SD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QRadioButton" name="radioButton_148">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO1(ID_SC)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QRadioButton" name="radioButton_149">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO5</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QRadioButton" name="radioButton_150">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QRadioButton" name="radioButton_151">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO6</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QRadioButton" name="radioButton_152">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO12(PMW0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QRadioButton" name="radioButton_153">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(PMW1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QRadioButton" name="radioButton_154">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QRadioButton" name="radioButton_155">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO19(PCM_FS)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QRadioButton" name="radioButton_156">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO16</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QRadioButton" name="radioButton_157">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO26</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QRadioButton" name="radioButton_158">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO20(PCM_DIN)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="0">
+          <widget class="QRadioButton" name="radioButton_159">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="1">
+          <widget class="QRadioButton" name="radioButton_160">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO21(PCM_DOUT)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioPeriodSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMaximumSize</enum>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioPeriodSetFunctionRun">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Run</string>
+           </property>
+           <property name="description">
+            <string>Confirm the selected pins and periodly set the status of the pins selected</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioPeriodSetFunctionStop">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+           <property name="description">
+            <string>Stop the periodly pin set process</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="GpioSetFunctionWidget" name="pageGpioSetFunction">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioButton_105">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_94">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="radioButton_90">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO2(SDA)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="radioButton_100">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="radioButton_104">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO3(SCL)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QRadioButton" name="radioButton_82">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QRadioButton" name="radioButton_102">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO4(GPCLK0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QRadioButton" name="radioButton_111">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO14(TXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QRadioButton" name="radioButton_109">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QRadioButton" name="radioButton_89">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO15(RXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QRadioButton" name="radioButton_98">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO17</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QRadioButton" name="radioButton_85">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO18(PCM_CLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QRadioButton" name="radioButton_113">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO27</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QRadioButton" name="radioButton_110">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QRadioButton" name="radioButton_106">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO22</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QRadioButton" name="radioButton_95">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO23</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QRadioButton" name="radioButton_114">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QRadioButton" name="radioButton_83">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO24</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QRadioButton" name="radioButton_118">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO10(MOSI)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QRadioButton" name="radioButton_91">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QRadioButton" name="radioButton_92">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO9(MISO)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QRadioButton" name="radioButton_96">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO25</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QRadioButton" name="radioButton_101">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(SCLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QRadioButton" name="radioButton_93">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO8(CE0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QRadioButton" name="radioButton_108">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QRadioButton" name="radioButton_88">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO7(CE1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QRadioButton" name="radioButton_81">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO0(ID_SD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QRadioButton" name="radioButton_107">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO1(ID_SC)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QRadioButton" name="radioButton_87">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO5</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QRadioButton" name="radioButton_119">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QRadioButton" name="radioButton_115">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO6</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QRadioButton" name="radioButton_112">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO12(PMW0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QRadioButton" name="radioButton_84">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(PMW1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QRadioButton" name="radioButton_86">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QRadioButton" name="radioButton_103">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO19(PCM_FS)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QRadioButton" name="radioButton_97">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO16</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QRadioButton" name="radioButton_117">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO26</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QRadioButton" name="radioButton_120">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO20(PCM_DIN)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="0">
+          <widget class="QRadioButton" name="radioButton_116">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="1">
+          <widget class="QRadioButton" name="radioButton_99">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO21(PCM_DOUT)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSetFunction</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMaximumSize</enum>
+         </property>
+         <item>
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioSetFunctionRun">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Run</string>
+           </property>
+           <property name="description">
+            <string>Confirm the selected pins and set the status of the pins selected</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="GpioSingFunctionWidget" name="pageGpioSingFunction">
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="formLayout_5">
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioButton_161">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioButton_162">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QRadioButton" name="radioButton_163">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO2(SDA)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="radioButton_164">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>5V0</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QRadioButton" name="radioButton_165">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO3(SCL)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QRadioButton" name="radioButton_166">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QRadioButton" name="radioButton_167">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO4(GPCLK0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QRadioButton" name="radioButton_168">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO14(TXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QRadioButton" name="radioButton_169">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QRadioButton" name="radioButton_170">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO15(RXD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QRadioButton" name="radioButton_171">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO17</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QRadioButton" name="radioButton_172">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO18(PCM_CLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QRadioButton" name="radioButton_173">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO27</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QRadioButton" name="radioButton_174">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QRadioButton" name="radioButton_175">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO22</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QRadioButton" name="radioButton_176">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO23</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QRadioButton" name="radioButton_177">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3V3</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QRadioButton" name="radioButton_178">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO24</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QRadioButton" name="radioButton_179">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO10(MOSI)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QRadioButton" name="radioButton_180">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QRadioButton" name="radioButton_181">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO9(MISO)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QRadioButton" name="radioButton_182">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO25</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QRadioButton" name="radioButton_183">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(SCLK)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QRadioButton" name="radioButton_184">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO8(CE0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QRadioButton" name="radioButton_185">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QRadioButton" name="radioButton_186">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO7(CE1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QRadioButton" name="radioButton_187">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO0(ID_SD)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QRadioButton" name="radioButton_188">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO1(ID_SC)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QRadioButton" name="radioButton_189">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO5</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QRadioButton" name="radioButton_190">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QRadioButton" name="radioButton_191">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO6</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QRadioButton" name="radioButton_192">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO12(PMW0)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QRadioButton" name="radioButton_193">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO11(PMW1)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QRadioButton" name="radioButton_194">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QRadioButton" name="radioButton_195">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO19(PCM_FS)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QRadioButton" name="radioButton_196">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO16</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QRadioButton" name="radioButton_197">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GPIO26</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QRadioButton" name="radioButton_198">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO20(PCM_DIN)</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="0">
+          <widget class="QRadioButton" name="radioButton_199">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>GND</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+         <item row="19" column="1">
+          <widget class="QRadioButton" name="radioButton_200">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>GPIO21(PCM_DOUT)</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">btnGrpGpioSingFunction</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <spacer name="verticalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QToolButton" name="songFileSelectBtn">
+             <property name="toolTip">
+              <string>click to select the song file to be played</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::RightArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="songFileNameEdit">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioSingFunctionRun">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Play</string>
+           </property>
+           <property name="description">
+            <string>Confirm the selected pin and the song to be played</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="repeatPlayCheckBox">
+             <property name="text">
+              <string>repeatly play</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="btnGpioSingFunctionStop">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+           <property name="description">
+            <string>Stop the song play</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QProgressBar" name="songPlayProgressBar">
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_13">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GpioGetFunctionWidget</class>
+   <extends>QWidget</extends>
+   <header>GpioGetFunctionWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GpioMonitorFunctionWidget</class>
+   <extends>QWidget</extends>
+   <header>GpioMonitorFunctionWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GpioSetFunctionWidget</class>
+   <extends>QWidget</extends>
+   <header>GpioSetFunctionWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GpioPeriodSetFunctionWidget</class>
+   <extends>QWidget</extends>
+   <header>GpioPeriodSetFunctionWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GpioSingFunctionWidget</class>
+   <extends>QWidget</extends>
+   <header>GpioSingFunctionWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="btnGrpGpioSetFunction">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="btnGrpGpioPeriodSetFunction">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="btnGrpGpioMonitorFunction">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="btnGrpGpioSingFunction"/>
+  <buttongroup name="btnGrpGpioGetFunction">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
+</ui>

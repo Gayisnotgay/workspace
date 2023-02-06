@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cppBuild",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}\\script",
+                "shell": {
+                    "executable": "C:\\OpenSource\\msys64\\msys2_shell.cmd",
+                    "args": ["-defterm", "-mingw64", "-no-start", "-here"]
+                }
+            },
+            "command": "./CMakeBuild_msys2.sh",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "shared",
+                "clear": true,
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "cppRun",
+            "type": "shell",
+            "command": ["ctest --verbose"],
+            "options": {
+                "cwd": "${workspaceFolder}\\build"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "shared",
+                "clear": true,
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "cppBuildAndRun",
+            "type": "shell",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cppBuild",
+                "cppRun"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+    ]
+}

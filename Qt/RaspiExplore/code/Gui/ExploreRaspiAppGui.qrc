@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>RaspBerryPi400.png</file>
+        <file>RaspberryIcon.ico</file>
+        <file>VoltageHighIcon.ico</file>
+        <file>VoltageLowIcon.ico</file>
+        <file>RaspberryBackgroud.png</file>
+        <file>VoltageWaveIcon.ico</file>
+    </qresource>
+</RCC>
